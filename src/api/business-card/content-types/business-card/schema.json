@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_cards",
+  "info": {
+    "singularName": "business-card",
+    "pluralName": "business-cards",
+    "displayName": "Business Card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Headline": {
+      "type": "string"
+    },
+    "ProfilePhoto": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "CompanyLogo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "vCard": {
+      "type": "blocks"
+    },
+    "Published": {
+      "type": "boolean"
+    },
+    "Website": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "Instagram": {
+      "type": "string"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "Github": {
+      "type": "string"
+    },
+    "TikTok": {
+      "type": "string"
+    }
+  }
+}
