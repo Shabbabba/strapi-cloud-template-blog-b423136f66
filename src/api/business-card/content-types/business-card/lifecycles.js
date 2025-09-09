@@ -6,8 +6,8 @@ module.exports = {
     const landingUrl = `https://mylandingpage/landing/${result.slug}/`;
 
     try {
-      await strapi.plugins['email'].services.email.send({
-        to: 'you@yourdomain.com',
+      await strapi.plugin('email').service('email').send({
+        to: 'info@tagtech-uk.com', // or result.email if dynamic
         subject: 'New Business Card Created',
         text: `
 A new business card has been published.
